@@ -1,0 +1,104 @@
+{
+  "environments": [
+    {
+      "name": "dev",
+      "userProvidedServices": [
+        {
+          "name": "-encryptionkey",
+          "content": {
+            "encryptedKey": "${ENC_KEY}"
+          }
+        }
+      ],
+      "zones": [
+        {
+          "org": "KIC",
+          "api": "api.cfhdcinternaltest.kroger.com",
+          "space": "--dev",
+          "name": "cfhdcinternaltest.kroger.com"
+        },
+        {
+          "org": "KIC",
+          "api": "api.cfcdcinternaltest.kroger.com",
+          "space": "--dev",
+          "name": "cfcdcinternaltest.kroger.com"
+        }
+      ]
+    },
+    {
+      "name": "test",
+      "userProvidedServices": [
+        {
+          "name": "-encryptionkey",
+          "content": {
+            "encryptedKey": "${ENC_KEY}"
+          }
+        }
+      ],
+      "zones": [
+        {
+          "org": "KIC",
+          "api": "api.cfhdcinternaltest.kroger.com",
+          "space": "--test",
+          "name": "cfhdcinternaltest.kroger.com"
+        },
+        {
+          "org": "KIC",
+          "api": "api.cfcdcinternaltest.kroger.com",
+          "space": "--test",
+          "name": "cfcdcinternaltest.kroger.com"
+        }
+      ]
+    },
+    {
+      "name": "stage",
+      "userProvidedServices": [
+        {
+          "name": "-encryptionkey",
+          "content": {
+            "encryptedKey": "${ENC_KEY}"
+          }
+        }
+      ],
+      "zones": [
+        {
+          "org": "KIC",
+          "api": "api.cfhdcinternaltest.kroger.com",
+          "space": "--stage",
+          "name": "cfhdcinternaltest.kroger.com"
+        },
+        {
+          "org": "KIC",
+          "api": "api.cfcdcinternaltest.kroger.com",
+          "space": "--stage",
+          "name": "cfcdcinternaltest.kroger.com"
+        }
+      ]
+    },
+    {
+      "name": "prod",
+      "userProvidedServices": [
+        {
+          "name": "-encryptionkey",
+          "content": {
+            "encryptedKey": "${ENC_KEY}"
+          }
+        }
+      ],
+      "zones": [
+        {
+          "org": "KIC",
+          "api": "api.cfhdcinternal.kroger.com",
+          "space": "--prod",
+          "name": "cfhdcinternal.kroger.com"
+        },
+        {
+          "org": "KIC",
+          "api": "api.cfcdcinternal.kroger.com",
+          "space": "--prod",
+          "name": "cfcdcinternal.kroger.com"
+        }
+      ]
+    }
+  ]
+}

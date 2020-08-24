@@ -1,0 +1,16 @@
+---
+applications:
+  - name: 
+    memory: 1G
+    disk_quota: 1G
+    timeout: 180
+    instances: 2
+    health-check-type: http
+    health-check-http-endpoint: /manage/health
+    buildpacks:
+      - java_buildpack_offline
+    services:
+      - -encryptionkey
+
+    env:
+      JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ }}'

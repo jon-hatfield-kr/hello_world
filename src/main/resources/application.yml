@@ -1,0 +1,38 @@
+---
+spring:
+  application:
+    name: KicappApplication
+  output:
+    ansi:
+      enabled: detect
+  profiles:
+    active: local
+#server:
+  #context-path: /
+  #port: 8080
+kroger:
+  eaf:
+    version: 5.2
+  ldap:
+    filter-order: -10
+  management:
+    security:
+      roles: oa--support-0000
+management:
+  endpoints:
+    web:
+      base-path: /manage
+      exposure:
+        include: health,info,krypt,keepalive
+#logging:
+  #level:
+    #org.springframework.security: DEBUG
+---
+spring:
+  profiles: local
+---
+spring:
+  profiles: cloud
+---
+spring:
+  profiles: unittest
