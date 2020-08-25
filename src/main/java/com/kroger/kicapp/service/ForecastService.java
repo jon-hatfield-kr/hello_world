@@ -9,10 +9,10 @@ import org.springframework.stereotype.Service;
 public class ForecastService {
 
     @Autowired
-    ForecastRepository repository;
+    ForecastRepository forecastRepository;
 
     public void saveForecast(Forecast forecast) {
 
-        repository.save(forecast);
+        forecastRepository.save(forecast);
     }
 }
